@@ -1,35 +1,87 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="cv">
+      <Info />
+      <Studies />
+      <Experience />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+function Info() {
+  return (
+    <section>
+      <h1>Personal Information</h1>
+      <form action="/">
+        <div>
+          <label htmlFor="">Name</label>
+          <input type="text" required />
+        </div>
+        <div>
+          <label htmlFor="">Email</label>
+          <input type="email" required />
+        </div>
+        <div>
+          <label htmlFor="">Tel</label>
+          <input type="number" required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  );
+}
+
+function Studies() {
+  return (
+    <section>
+      <h1>Education</h1>
+      <form action="#">
+        <div>
+          <label htmlFor="">School</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label htmlFor="">Study Title</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label htmlFor="">Study From</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label htmlFor="">Study End</label>
+          <input type="date" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  );
+}
+
+function Experience() {
+  return (
+    <section>
+      <h1>Work Experience</h1>
+      <form action="#">
+        <div>
+          <label htmlFor="">Company</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label htmlFor="">Position</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label htmlFor="">Responsibilities</label>
+          <input type="text" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  );
+}
