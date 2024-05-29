@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #213547;
+  color: ;
   background-color: #ffffff;
 }
 
@@ -12,20 +12,21 @@ body {
   min-height: 100vh;
 }
 .cv {
-  border: 1px solid black;
+  border: 2px solid #213547;
   width: 400px;
-  padding: 30px;
+  padding: 50px;
   font-weight: bold;
+  border-radius: 16px;
 }
 h1 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 1.1;
 }
 
 section > form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -36,3 +37,6 @@ form > div {
   width: 330px;
 }
 
+input {
+  padding: 1px 8px;
+}
