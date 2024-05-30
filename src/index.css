@@ -34,8 +34,10 @@ form > div {
   justify-content: space-between;
   align-items: center;
   width: 330px;
+  height: 19px;
 }
 
 input {
   padding: 1px 8px;
 }
+
