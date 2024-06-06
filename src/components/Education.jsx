@@ -1,3 +1,12 @@
+import PropTypes from "prop-types";
+
+Education.propTypes = {
+  formData: PropTypes.objectOf(PropTypes.string),
+  handleChange: PropTypes.func,
+  handleSubmit: PropTypes.func,
+  isSubmitted: PropTypes.objectOf(PropTypes.bool),
+};
+
 export default function Education({
   formData,
   handleSubmit,

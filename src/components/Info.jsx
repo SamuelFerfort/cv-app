@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+Info.propTypes = {
+  formData: PropTypes.objectOf(PropTypes.string),
+  handleChange: PropTypes.func,
+  handleSubmit: PropTypes.func,
+  isSubmitted: PropTypes.objectOf(PropTypes.bool),
+};
 export default function Info({
   formData,
   handleSubmit,
